@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{428EC138-D3A8-48BE-8F25-7B636A784927}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tarot_App</RootNamespace>
+    <AssemblyName>Tarot_App</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Tarot_App.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Tarot_App.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GunlukTarih.cs" />
+    <Compile Include="Model\GunlukTarihDataContext.cs" />
+    <Compile Include="Model\Tarot.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomCartPage.xaml.cs">
+      <DependentUpon>RandomCartPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RandomCartPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="images\AsaSerisi\00_AsaAsi.jpg" />
+    <Resource Include="images\AsaSerisi\01_AsaKralicesi.jpg" />
+    <Resource Include="images\AsaSerisi\02_AsaKrali.jpg" />
+    <Resource Include="images\AsaSerisi\03_AsaSovalyesi.jpg" />
+    <Resource Include="images\AsaSerisi\04_AsaPrensi.jpg" />
+    <Resource Include="images\AsaSerisi\05_AsaOnlusu.jpg" />
+    <Resource Include="images\AsaSerisi\06_AsaDokuzlusu.jpg" />
+    <Resource Include="images\AsaSerisi\07_AsaSekizlisi.jpg" />
+    <Resource Include="images\AsaSerisi\08_AsaYedilisi.jpg" />
+    <Resource Include="images\AsaSerisi\09_AsaAltilisi.jpg" />
+    <Resource Include="images\AsaSerisi\10_AsaBeslisi.jpg" />
+    <Resource Include="images\AsaSerisi\11_AsaDortlusu.jpg" />
+    <Resource Include="images\AsaSerisi\12_AsaUclusu.jpg" />
+    <Resource Include="images\AsaSerisi\13_AsaIkilisi.jpg" />
+    <Resource Include="images\KilicSerisi\00_KilicAsi.jpg" />
+    <Resource Include="images\KilicSerisi\01_KilicKralicesi.jpg" />
+    <Resource Include="images\KilicSerisi\02_KilicKrali.jpg" />
+    <Resource Include="images\KilicSerisi\03_KilicSovalyesi.jpg" />
+    <Resource Include="images\KilicSerisi\04_KilicPrensi.jpg" />
+    <Resource Include="images\KilicSerisi\05_KilicOnlusu.jpg" />
+    <Resource Include="images\KilicSerisi\06_KilicDokuzlusu.jpg" />
+    <Resource Include="images\KilicSerisi\07_KilicSekizlisi.jpg" />
+    <Resource Include="images\KilicSerisi\08_KilicYedilisi.jpg" />
+    <Resource Include="images\KilicSerisi\09_KilicAltili.jpg" />
+    <Resource Include="images\KilicSerisi\10_KilicBeslisi.jpg" />
+    <Resource Include="images\KilicSerisi\11_KilicDortlusu.jpg" />
+    <Resource Include="images\KilicSerisi\12_KilicUclusu.jpg" />
+    <Resource Include="images\KilicSerisi\13_KilicIkilisi.jpg" />
+    <Resource Include="images\KupaSerisi\00_KupaAsi.jpg" />
+    <Resource Include="images\KupaSerisi\01_KupaKralicesi.jpg" />
+    <Resource Include="images\KupaSerisi\02_KupaKrali.jpg" />
+    <Resource Include="images\KupaSerisi\03_KupaSovalye.jpg" />
+    <Resource Include="images\KupaSerisi\04_KupaPrensi.jpg" />
+    <Resource Include="images\KupaSerisi\05_KupaOnlusu.jpg" />
+    <Resource Include="images\KupaSerisi\06_KupaDokuzlusu.jpg" />
+    <Resource Include="images\KupaSerisi\07_KupaYedilisi.jpg" />
+    <Resource Include="images\KupaSerisi\08_KupaAltilisi.jpg" />
+    <Resource Include="images\KupaSerisi\09_KupaBeslisi.jpg" />
+    <Resource Include="images\KupaSerisi\10_KupaDortlusu.jpg" />
+    <Resource Include="images\KupaSerisi\11_KupaUclusu.jpg" />
+    <Resource Include="images\KupaSerisi\12_KupaIkilisi.jpg" />
+    <Resource Include="images\KupaSerisi\13_KupaSekizlisi.jpg" />
+    <Resource Include="images\TilsimSerisi\00_TilsimAsi.jpg" />
+    <Resource Include="images\TilsimSerisi\01_TilsimKralicesi.jpg" />
+    <Resource Include="images\TilsimSerisi\02_TilsimKrali.jpg" />
+    <Resource Include="images\TilsimSerisi\03_TilsimSovalyesi.jpg" />
+    <Resource Include="images\TilsimSerisi\04_TilsimPrensi.jpg" />
+    <Resource Include="images\TilsimSerisi\05_TilsimOnlusu.jpg" />
+    <Resource Include="images\TilsimSerisi\06_TilsimDokuzlusu.jpg" />
+    <Resource Include="images\TilsimSerisi\07_TilsimSekizlisi.jpg" />
+    <Resource Include="images\TilsimSerisi\08_TilsimYedilisi.jpg" />
+    <Resource Include="images\TilsimSerisi\09_TilsimAltilisi.jpg" />
+    <Resource Include="images\TilsimSerisi\10_TilsimBeslisi.jpg" />
+    <Resource Include="images\TilsimSerisi\11_TilsimDortlusu.jpg" />
+    <Resource Include="images\TilsimSerisi\12_TilsimUclusu.jpg" />
+    <Resource Include="images\TilsimSerisi\13_TilsimIkilisi.jpg" />
+    <Resource Include="images\ArkanaSerisi\00_Joker.jpg" />
+    <Resource Include="images\ArkanaSerisi\01_Buyucu.jpg" />
+    <Resource Include="images\ArkanaSerisi\02_Azize.jpg" />
+    <Resource Include="images\ArkanaSerisi\03_Kralice.jpg" />
+    <Resource Include="images\ArkanaSerisi\04_Kral.jpg" />
+    <Resource Include="images\ArkanaSerisi\05_Aziz.jpg" />
+    <Resource Include="images\ArkanaSerisi\06_Asiklar.jpg" />
+    <Resource Include="images\ArkanaSerisi\07_SavasArabasi.jpg" />
+    <Resource Include="images\ArkanaSerisi\08_Guc.jpg" />
+    <Resource Include="images\ArkanaSerisi\09_Ermis.jpg" />
+    <Resource Include="images\ArkanaSerisi\10_KaderCarki.jpg" />
+    <Resource Include="images\ArkanaSerisi\11_Adalet.jpg" />
+    <Resource Include="images\ArkanaSerisi\12_AsilmisAdam.jpg" />
+    <Resource Include="images\ArkanaSerisi\13_Olum.jpg" />
+    <Resource Include="images\ArkanaSerisi\14_Denge.jpg" />
+    <Resource Include="images\ArkanaSerisi\15_Seytan.jpg" />
+    <Resource Include="images\ArkanaSerisi\16_YikilanKule.jpg" />
+    <Resource Include="images\ArkanaSerisi\17_Yildiz.jpg" />
+    <Resource Include="images\ArkanaSerisi\18_Ay.jpg" />
+    <Resource Include="images\ArkanaSerisi\19_Gunes.jpg" />
+    <Resource Include="images\ArkanaSerisi\20_Mahkeme.jpg" />
+    <Resource Include="images\ArkanaSerisi\21_Dunya.jpg" />
+    <Content Include="TarotData.xml" />
+    <Resource Include="images\MainPicture.jpg" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

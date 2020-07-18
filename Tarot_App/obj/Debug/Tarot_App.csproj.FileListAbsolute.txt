@@ -1,0 +1,15 @@
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\ApplicationIcon.png
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\Background.png
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\Tarot_App.dll
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\Tarot_App.pdb
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\AppManifest.xaml
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\Tarot_App.xap
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\obj\Debug\App.g.i.cs
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\obj\Debug\MainPage.g.i.cs
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\obj\Debug\Tarot_App.g.resources
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\obj\Debug\Tarot_App.dll
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\obj\Debug\Tarot_App.pdb
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\obj\Debug\XapCacheFile.xml
+c:\users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\obj\Debug\RandomCartPage.g.i.cs
+C:\Users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\sevda_000\documents\visual studio 2010\Projects\Tarot_App\Tarot_App\Bin\Debug\Microsoft.Phone.Controls.xml
